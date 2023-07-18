@@ -1,0 +1,93 @@
+* {
+    font-family: 'Roboto';
+    background-color: #94C5F2;
+}
+
+
+.myForm div {
+    padding-left: 34px;
+    display: flex;
+    flex-direction: column;
+    max-width: 450px;
+    background-color: #4DA6F9;
+    border-radius: 12px;
+    padding: 12px;
+    margin: 12px;
+}
+.client h2, .business h2, .calculate h2 {
+    background-color: #4DA6F9;
+    color: #255078;
+}
+.informatioFind {
+    max-width: 450px;
+    flex-direction: row !important;
+    padding: 0px !important;
+    margin: 0px !important;
+}
+.findCNPJ, .findCBO {
+    background-color: #255078;
+    border: none;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+}
+input {
+    height: 32px;
+    background-color: #94C5F2;
+    border-radius: 4px;
+    border: none;
+}
+label {
+    font-size: 20px;
+    background-color: #4DA6F9;
+    padding: 8px 0px;
+}
+.hidden {
+    display: block;
+    max-width: 900px;
+    background-color: white;
+}
+.noL {
+    display: none !important;
+}
+.imgFinded {
+    width: 50%;
+    background-color: transparent;
+}
+.sendBTN {
+    background-color: #255078;
+    color: #4DA6F9;
+    border: none;
+    padding: 22px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2.2px;
+}
+.btnSendInformation {
+    background-color: transparent !important;
+    gap: 22px;
+    display: flex ;
+    flex-direction: row  !important;
+}
+.downloadBTN {
+    background-color: #4DA6F9;
+    color: #255078;
+    border: none;
+    padding: 22px;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 16px;
+    letter-spacing: 2.2px;
+}
+/*TIRAR DEPOIS QUE CLICKAR EM DWNLAD*/
+
+@media print {
+    .myForm {
+        display: none;
+    }
+    .holerite {
+        display: block;
+    }
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,wght@0,600;1,600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="myForm">
+
+        <div class="client">
+            <h2>DADOS CLIENTE</h2>
+            <label for="">Nome</label>
+            <input type="text" class="nameClient" placeholder="Exemplo : Joao Silva">
+            <label for="">CBO</label>
+            <div class="informatioFind">
+                <input type="text" class="cboClient" placeholder="Exemplo: 123456">
+                <button class="findCBO"><img class="imgFinded" src="./svgfinded.svg" alt=""></button>
+            </div>
+            <label for="">Profissão</label>
+            <input type="text" class="occupationClient" placeholder="Profissão do cliente">
+        </div>
+
+        <div class="business">
+            <h2>DADOS EMPRESA</h2>
+            <label for="">CNPJ</label>
+            <div class="informatioFind">
+                <input type="text" class="cnpjCompany" placeholder="00.000.000/0000-00">
+                <button class="findCNPJ"><img class="imgFinded" src="./svgfinded.svg" alt=""></button>
+            </div>
+            <label for="">Nome Empresa</label>
+            <input type="text" class="nameCompany" placeholder="EMPRESA XYZ LTDA">
+            <label for="">Codigo Empresa</label>
+            <input type="text" class="codeCompany" placeholder="Codigo do funcionario da empresa. Exe: 12">
+            <label for="">Data de admissão</label>
+            <input type="date" class="dateAdmissionCompany">
+        </div>
+
+        <div class="calculate">
+            <h2>SALARIO</h2>
+            <label for="">Salario</label>
+            <input type="text" class="salaryClient" placeholder="Exemplo: 3500.00">
+            <label for="">Comissão Extra</label>
+            <input type="text" class="salaryExtraClient" placeholder="Exemplo: 350.00">
+            <label for="">Mês do pagamento</label>
+            <input type="text" class="paymentMonthClient" placeholder="Mês referente ao holerite (Janeiro, fevereiro...)">
+            <label for="">Descrição holerite</label>
+            <textarea placeholder="Uma breve descrição (Opcional)" class="descClient"s name="" id="" cols="30" rows="10"></textarea>
+        </div>
+
+        <div class="btnSendInformation">
+            <button class="sendBTN">ENVIAR INFORMAÇÕES</button>
+            <button class="downloadBTN noL">DOWNLOAD HOLERITE</button>
+        </div>
+
+        
+    </div>
+    <div class="holerite">
+        <canvas id="myCanvas" class="hidden noL" width="2320" height="1507"></canvas>
+    </div>
+    <script type="module" src="./source/index.js"></script>
+</body>
+</html>

@@ -17,4 +17,3 @@ Nesse projeto eu refiz o modelo antigo do holeriteMake, eu refatorei o código d
   <li>Design semantico e responsivo</li>
 </ul>
 
-P
